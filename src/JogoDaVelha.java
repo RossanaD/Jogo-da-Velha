@@ -5,6 +5,7 @@ public class JogoDaVelha extends JogoDeTabuleiro {
 public JogoDaVelha(){
 	super(3,'#');
 	}
+
 public boolean venceu(char idJogador) {
 		boolean venceu = false;
 		//horizontal
@@ -58,7 +59,6 @@ public void jogar() {
 	boolean vence = false;
 	System.out.println("");
 	while(vence != true || tabuleiro.getQtPecas() == 9) {
-		boolean adicionarpeca = false;
 		//while(adicionarpeca != true) {
 			//i = (int) ((Math.random() * 3) - 0);
 			//j = (int) ((Math.random() * 3) - 0);
@@ -84,7 +84,6 @@ public void jogar() {
 		tabuleiro.toString();
 		System.out.println("");
 		vence = venceu('O');
-		vence = venceu('V');
 		System.out.println("Vez do Jogador X");
 		System.out.println("Digite a Linha:");
 		i = teclado.nextInt();

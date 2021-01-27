@@ -51,7 +51,13 @@ public char getPeca(int i, int j) {
 }
 
 public int getQtPecas() {
-	QtPecas += 1;
+	for(int i=0;i<3;i++) {
+		for(int j=0;j<3;j++) {
+			if(tabuleiro[i][j] == 'X' || tabuleiro[i][j] == 'O') {
+				QtPecas += 1;
+			}
+		}
+	}
 	return QtPecas;
 	
 	
